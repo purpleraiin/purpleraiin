@@ -1,0 +1,24 @@
+SonarQube
+SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality. It performs automatic reviews of code to detect bugs, vulnerabilities, and code smells in applications. SonarQube supports a wide range of programming languages, including Scala, Python, yml, XML, Java, C#, JavaScript, TypeScript, C++, and many others.
+
+URL: http://sonar3.jio.com:9000
+
+Procedure
+If developer want to build any repo with an branch apart from master, Then it's necessary to create "sonar-project.properties" file in that branch
+
+otherwise build will get failed at sonar task
+
+sonar-project.properties for master branch (Don't change anything here)
+
+Example:
+
+image.png
+
+sonar-project.properties for other branch
+
+Make sure "sonar-project.properties" file is present, if not create that (it's mandatory)
+Make sure branch name should be change to the one which is being use
+Make sure ProjectKey, ProjectName should be the repo name only.
+Example:
+
+image.png
